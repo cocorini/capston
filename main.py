@@ -290,10 +290,16 @@ class RideApp(QWidget):
     def BtnOpen_clicked(self):
         self.File = QFileDialog.getOpenFileName(self, 'Open Image', './')
         self.label1.setText(self.File[0])
- 
+	# self.File 경로를 저장해서 파일 입출력 read, write를 통해 해당 경로의 파일을 지정된 경로로 넣어야 할 것 같음
+    # 여기서 모듈화시킨 cnn실행 코드를 이용해서 cnn 실행.? 여기서 실행 시켜야할까 아니면
+    # parking 함수에서 아두이노 실행시키는 것처럼 실행할까..? 이걸 고민해보자.
+    # riding.parking(...)
+                    
+        
+    # 사실상 save 버튼은 필요가 없다?
     def BtnSave_clicked(self):
         self.File = QFileDialog.getSaveFileName(self, 'Save Image', './')
-
+	
 #######################################################################
 #######################################################################
 ########################   ERROR APPLICATION   ########################
