@@ -159,7 +159,6 @@ class UserRegApp(QWidget):
     def BtnBack_clicked(self):
         self.close()
 
-    # 중복하는 것 상관없이 일단 무조건 등록하는 거로... 되어있는 상태임.
     def BtnReg_clicked(self):
         global TextAddr, TextPk
         TextAddr=self.UserAddress.text()
