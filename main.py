@@ -476,7 +476,9 @@ class MainApp(QWidget):
             self.second = DpyCompleteApp()
         else :
             self.second = ErrorApp()
-
+	
+# 아무래도 컨트랙트 등록과는 별개로 어떤 컨트랙트를 이용할 것인지를 결정하는 부분도 구현이 필요할 것 같다..
+# 보완해야겠음.
     def BtnReg_clicked(self):
         global capstonstoragee
         if 'CA' in globals():
